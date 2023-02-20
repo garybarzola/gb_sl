@@ -7,7 +7,7 @@ body {
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .tooltip {
@@ -106,7 +106,7 @@ body {
 }
 
 .footer {
-  height: 50px;
+  min-height: 75px;
   background-color: #18122b;
   text-align: center;
   color: white;
@@ -118,4 +118,12 @@ body {
 .tooltip__text.black {
   background-color: white;
   color: #18122b;
+}
+
+@media screen and (max-width: 500px) {
+  .tooltip__text {
+    left: auto;
+    right: 0;
+    top: 25px;
+  }
 }
